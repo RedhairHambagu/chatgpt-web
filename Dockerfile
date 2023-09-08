@@ -26,7 +26,7 @@ COPY /service/package.json /app
 
 COPY /service/pnpm-lock.yaml /app
 
-RUN pnpm cache clear
+RUN pnpm cache clear --force
 
 RUN pnpm install --no-frozen-lockfile
 
